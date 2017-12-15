@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
        
-        count = count + 1
+        count += 1
         
         print(count)
         
