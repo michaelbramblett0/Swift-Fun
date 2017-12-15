@@ -17,7 +17,7 @@ class ViewController: UIViewController {
        
         count = count + 1
         
-        print(count)
+        
         
         if count >= 10 {
             view.backgroundColor = UIColor.red
