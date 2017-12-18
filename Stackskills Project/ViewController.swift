@@ -12,9 +12,17 @@ class ViewController: UIViewController {
 
    var count = 0
     @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var topTextField: UITextField!
+    @IBOutlet weak var bottomTextField: UITextField!
+   
     
     @IBAction func buttonTapped(_ sender: Any) {
-       
+    
+        let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+        
+        myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
+        
+        /*
         count += 1
         
         print(count)
@@ -31,7 +39,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-       
+     */
         
     }
 
