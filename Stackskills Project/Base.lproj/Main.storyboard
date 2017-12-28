@@ -49,6 +49,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ScZ-11-64X">
+                                <rect key="frame" x="163" y="176" width="49" height="31"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="g6S-6h-N5m">
+                                        <rect key="frame" x="0.0" y="0.0" width="49" height="31"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HOo-2Q-exc">
+                                                <rect key="frame" x="0.0" y="0.0" width="49" height="31"/>
+                                                <subviews>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WIe-YX-SQY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -56,7 +74,9 @@
                             <constraint firstItem="Y8g-So-ZhW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O60-Gk-Pqd"/>
                             <constraint firstItem="P7K-lB-dg1" firstAttribute="top" secondItem="Y8g-So-ZhW" secondAttribute="bottom" constant="10" id="Qb1-4q-iS4"/>
                             <constraint firstItem="P7K-lB-dg1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UOi-8z-3yK"/>
+                            <constraint firstItem="yv6-gi-WEo" firstAttribute="top" secondItem="ScZ-11-64X" secondAttribute="bottom" constant="16.5" id="bHL-qQ-KPV"/>
                             <constraint firstItem="k8L-0D-flr" firstAttribute="top" secondItem="P7K-lB-dg1" secondAttribute="bottom" constant="16" id="c2g-RM-mKO"/>
+                            <constraint firstItem="ScZ-11-64X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fMz-3g-fJS"/>
                             <constraint firstItem="yv6-gi-WEo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fR6-Fb-Ect"/>
                             <constraint firstItem="P7K-lB-dg1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h1Q-No-TiG"/>
                             <constraint firstItem="k8L-0D-flr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yfo-PO-1m5"/>
@@ -64,6 +84,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="WIe-YX-SQY" id="ZQg-vc-uiR"/>
                         <outlet property="bottomTextField" destination="Y8g-So-ZhW" id="t6h-kR-REq"/>
                         <outlet property="myLabel" destination="P7K-lB-dg1" id="m3L-eU-QUy"/>
                         <outlet property="topTextField" destination="yv6-gi-WEo" id="oPd-hx-HX9"/>
